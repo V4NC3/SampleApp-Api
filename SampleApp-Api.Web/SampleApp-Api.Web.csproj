@@ -181,7 +181,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
-    <Compile Include="Controllers\Api\EchoController.cs" />
+    <Compile Include="Controllers\Api\ClientController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -295,6 +295,16 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SampleApp.Model\SampleApp.Model.csproj">
+      <Project>{46DEB21C-3EFE-4C8B-949C-04B3A4262C47}</Project>
+      <Name>SampleApp.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SampleApp.Services\SampleApp.Services.csproj">
+      <Project>{750D6737-B41E-4E97-A02D-8B079275EC5A}</Project>
+      <Name>SampleApp.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
