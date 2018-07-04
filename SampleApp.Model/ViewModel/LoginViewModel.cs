@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SampleApp.Model.View
+namespace SampleApp.Model.ViewModel
 {
     public class LoginViewModel
     {
@@ -12,5 +12,6 @@ namespace SampleApp.Model.View
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }
+
     }
 }

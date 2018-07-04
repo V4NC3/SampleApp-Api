@@ -1,6 +1,6 @@
 ﻿using SampleApp.Model.Request;
 using SampleApp.Model.Responses;
-using SampleApp.Model.View;
+using SampleApp.Model.ViewModel;
 using SampleApp.Services;
 using System;
 using System.Collections.Generic;
@@ -15,7 +15,7 @@ namespace SampleApp_Api.Web.Controllers.Api
     public class ClientController : ApiController
     {   
         [Route("register"), HttpPost, AllowAnonymous]
-        public HttpResponseMessage register(ClientAddRequest model)
+        public HttpResponseMessage Register(ClientAddRequest model)
         {
             try
             {
@@ -56,7 +56,7 @@ namespace SampleApp_Api.Web.Controllers.Api
                 }
                 else
                 {
-                    ErrorResponse resp = new ErrorResponse("Uncessful Login Attempt");
+                    ErrorResponse resp = new ErrorResponse("Unsuccessful Login Attempt");
                     return Request.CreateResponse(HttpStatusCode.OK, resp);
                 }
             }
